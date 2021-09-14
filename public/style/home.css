@@ -5,64 +5,32 @@
   font-family: 'Poppins';
 }
 
-.banner .card img {
-  height: 20rem;
+
+
+
+
+
+.homePrincipal{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.homePrincipal img{
   width: 100%;
-  overflow: hidden;
+  height: 600px;
 }
-
-.destaque .card {
+.homeInferior{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 5%;
+  font-size: 18px;
+  
 }
-
-.destaques-dia {
-  /* margin-top: 3.125rem; */
-  background-color: #f3f3f3;
-  display: fixed;
-}
-
-.destaques-dia .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.destaques-dia .title .background {
-  border-radius: 1.5rem;
-  background-color: #f3f3f3;
-  width: 470px;
-  margin-top: 1.25rem;
-}
-
-.destaques-dia .title .h2 {
-  color: #bc002e;
-  text-decoration: none;
-  font-size: 2.1875rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 900 'Poppins' sans-serif;
-  font-size: 32px;
-}
-
-.destaques-dia .container {
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
-  background-color: white;
-  border-radius: 0.625rem;
-  margin-top: 2.5rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-}
-
-.destaques-dia .img-destaque {
-  /* padding: 1.875rem; */
-  margin-bottom: 45px;
-}
-#menumobile{
-  display: none;
+.homeInferior img{
+  width: 20%;
+  margin-top: 5%;
 }
 
 @media(max-width: 320px){

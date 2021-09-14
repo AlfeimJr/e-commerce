@@ -9,81 +9,44 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--add swiper-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"/>
 
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+      rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/style/home.css" />
     <link rel="stylesheet" href="/style/headerGlobal.css">
+    <link rel="stylesheet" href="/style/footerglobal.css">
   </head>
-  <body>
-      <%- include('../components/header.ejs')  %> 
-    <!-- Carrosel 1 -->
-    <div class="banner swiper-container">
-      <div class="swiper-wrapper">
-        <div class="card swiper-slide">
-          <img src="/img/banner-img01.jpg" alt="" />
-        </div>
-        <div class="card swiper-slide">
-          <img src="/img/banner-img02.jpg" alt="" />
-        </div>
-      </div>
 
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+  <body>
+
+      <%- include('../components/header.ejs')  %> 
+
+    <main>
+
+    <div class="homePrincipal">
+      <img src="/img/pchome.jpg">
     </div>
 
-    <!-- Carrosel 2 -->
-    <section class="destaques-dia">
-      <div class="container">
-        <div class="title">
-          <div class="background"><div class="h2">Destaques do Dia</div></div>
-        </div>
+    
+    <div class="homeInferior">
+      
+      <img src="/img/Computador.jpg">
+      <h2 class="descricao">Destaque do Mês</h2>
+      <h3 class="descricao">Computador Gamer</h3>
+      <p class="descricao">Preço a vista R$2600,00</p>
+    </div>
 
-        <div class="destaque swiper-container">
-          <div class="swiper-wrapper">
-            <div class="card swiper-slide">
-              <img
-                class="img-destaque"
-                src="/img/Computador.jpg"
-                alt=""
-              />
-              <div class="description">
-                <h2>Computador</h2>
-                <p>Especificações</p>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <img class="img-destaque" src="/img/Ps5.jpg" alt="" />
-              <div class="description">
-                <h2>Playstation 5</h2>
-                <p>Especificações</p>
-              </div>
-            </div>
-          </div>
+    </main>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
 
-    <main></main>
 
-    <footer></footer>
+  
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
+    <%- include('../components/footer.ejs')  %> 
+
   </body>
 </html>
